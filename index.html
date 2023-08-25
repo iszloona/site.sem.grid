@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>grid</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Giulie</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+                <a class="nav-link" href="#"></a>
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#produtos">produtos</a></li>
+                  <li><a class="dropdown-item" href="#conteudo">conteudo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#footer"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/starbucks.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/cafes.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/cafeteria2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<br>
+<!--cards-->
+<h2 id="produtos" class="col-11 m-auto">produtos</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="imgs/cafe basic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Basic Coffe</h5>
+              <p class="card-text">
+                <!--modal1-->
+             
+<button type="button" class="btn btn-primary text-bg-light p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  ...
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">descriçao</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <img src="imgs/cafes.png" class="card-img-top" alt="">
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugiat aliquam deleniti aut sed, praesentium assumenda eius dolorum quae, minima rem, laborum molestias alias nostrum doloribus a totam minus iure?</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/latte.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Latte</h5>
+              <p class="card-text">
+
+                <button type="button" class="btn btn-primary text-bg-light p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  ...
+                </button>
+                
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">descriçao</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <img src="imgs/cafes.png" class="card-img-top" alt="">
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugiat aliquam deleniti aut sed, praesentium assumenda eius dolorum quae, minima rem, laborum molestias alias nostrum doloribus a totam minus iure?</p>
+                
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+                        <button type="button" class="btn btn-primary">entrega</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/cafe branco.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">White Coffe</h5>
+              <p class="card-text">
+                <button type="button" class="btn btn-primary text-bg-light p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ...
+              </button>
+              
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 " id="exampleModalLabel">descriçao</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <img src="imgs/latte.jpg" class="card-img-top" alt="">
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugiat aliquam deleniti aut sed, praesentium assumenda eius dolorum quae, minima rem, laborum molestias alias nostrum doloribus a totam minus iure?</p>
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+                      <button type="button" class="btn btn-primary">entrega</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/suco.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pinapple wth mint Juice</h5>
+              <p class="card-text">
+                <button type="button" class="btn btn-primary text-bg-light p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  ...
+                </button>
+                
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">descriçao</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <img src="imgs/suco.jpg" class="card-img-top" alt="">
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugiat aliquam deleniti aut sed, praesentium assumenda eius dolorum quae, minima rem, laborum molestias alias nostrum doloribus a totam minus iure?</p>
+                
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+                        <button type="button" class="btn btn-primary">entrega</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+</div>
+<br><br>
+<hr class="col-11 m-auto"/>
+<div class="col-11 m-auto">
+  <h2 class="text-center">Sobre nós</h2>
+  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur quaerat quis quae laborum totam, animi eaque facilis tenetur, cum praesentium aspernatur aliquam quisquam fugit saepe possimus sint nemo esse?</p>
+</div>
+<hr class="col-11 m-auto"/>
+<br><br>
+<footer class="page-footer p-5 col-11 m-auto" 
+style="background-color: white;">
+<div class="text-center">
+  <a href="#">@2023 Copyright: Giuliane Rodrigues</a>
+</div>
+</footer>
+</body>
+</html>
